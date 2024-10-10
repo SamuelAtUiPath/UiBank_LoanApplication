@@ -1,19 +1,8 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.in_email="email@example.com" this:Main.in_LoanAmount="50000" this:Main.in_LoanTerm="5" this:Main.in_YearlyIncome="8000" this:Main.in_Age="34" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="in_email" Type="InArgument(x:String)" />
-    <x:Property Name="in_LoanAmount" Type="InArgument(x:String)" />
-    <x:Property Name="in_LoanTerm" Type="InArgument(x:String)" />
-    <x:Property Name="in_YearlyIncome" Type="InArgument(x:String)" />
-    <x:Property Name="in_Age" Type="InArgument(x:String)" />
-    <x:Property Name="out_LoanRate" Type="InArgument(x:String)" />
-    <x:Property Name="out_LoanId" Type="InArgument(x:String)" />
+    <x:Property Name="out_LoanRate" Type="OutArgument(x:String)" />
+    <x:Property Name="out_LoanId" Type="OutArgument(x:String)" />
   </x:Members>
-  <this:Main.out_LoanRate>
-    <InArgument x:TypeArguments="x:String" />
-  </this:Main.out_LoanRate>
-  <this:Main.out_LoanId>
-    <InArgument x:TypeArguments="x:String" />
-  </this:Main.out_LoanId>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
@@ -60,6 +49,8 @@
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Testing.Activities.TestData</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -120,21 +111,38 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="416,288.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="416,498.66666666666674" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="email@example.com" Name="Email" />
+      <Variable x:TypeArguments="x:String" Default="50000" Name="LoanAmount" />
+      <Variable x:TypeArguments="x:String" Default="5" Name="LoanTerm" />
+      <Variable x:TypeArguments="x:String" Default="8000" Name="YearlyIncome" />
+      <Variable x:TypeArguments="x:String" Default="34" Name="Age" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="InputData_GenerateLoanData - Invoke Workflow File (InputData\InputData_GenerateLoanData.xaml)" sap:VirtualizedContainerService.HintSize="354,210" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="InputData\InputData_GenerateLoanData.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_Email">[Email]</OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_LoanAmount">[LoanAmount]</OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_LoanTerm">[LoanTerm]</OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_YearlyIncome">[YearlyIncome]</OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_Age">[Age]</OutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="UiBank_ApplyforLoan - Invoke Workflow File (UiBank\UiBank_ApplyforLoan.xaml)" sap:VirtualizedContainerService.HintSize="354,200.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="UiBank\UiBank_ApplyforLoan.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="in_email">[in_email]</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_LoanAmount">[in_LoanAmount]</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_LoanTerm">[in_LoanTerm]</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_YearlyIncome">[in_YearlyIncome]</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_Age">[in_Age]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_email">[Email]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_LoanAmount">[LoanAmount]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_LoanTerm">[LoanTerm]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_YearlyIncome">[YearlyIncome]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Age">[Age]</InArgument>
         <OutArgument x:TypeArguments="x:String" x:Key="out_LoanId">[out_LoanId]</OutArgument>
         <OutArgument x:TypeArguments="x:String" x:Key="out_LoanRate">[out_LoanRate]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>

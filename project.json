@@ -14,7 +14,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "24.10.1.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.5",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -80,6 +80,12 @@
     {
       "filePath": "UiBank\\UiBank_ApplyforLoan.xaml",
       "uniqueId": "17b1c61c-8fdb-4cb1-8fa4-ef7c024320e6",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "UiBank\\UiBank_CheckLoanDetails.xaml",
+      "uniqueId": "1e877c34-64f2-48a8-aa2d-56b6c5363e38",
       "input": [],
       "output": []
     }
