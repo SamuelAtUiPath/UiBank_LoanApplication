@@ -1,0 +1,13 @@
+﻿{
+  "Name": "amount",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "pzlU-GT36U-nNx1gxPI9Lw",
+  "Reference": "ZKxc45lPuUOgwjADdcqFvg/pzlU-GT36U-nNx1gxPI9Lw",
+  "ParentRef": "ZKxc45lPuUOgwjADdcqFvg/3tKTTFk98UeU7q5waXIlEw",
+  "Created": "2024-10-10T14:33:21.681718Z",
+  "Updated": "2024-10-10T14:33:21.681718Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JKHXAO2EnEWRHS3oB2L-Pg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="429, 539, 59, 59" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl src='../../../../assets/images/updated-images/checking_and_savings accounts.svg' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl src='../../../../assets/images/updated-images/checking_and_savings accounts.svg' tag='IMG' type='' class='' aaname='' /&gt;" Guid="6a239b3a-7b51-479f-aa40-23368a5e04bc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD8AAAA/CAYAAABXXxDfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAF5SURBVGhD7dq7SgNBFMZxXyK2PoGxEt8gYCFEwcIqvoDYiFpYWFhZmsbGxs7X8FZ6SSsWSkCxEkTEnd05urNjEXZlzpIsnN3z/eEjsAsDvxS5kSlSHPBaA15rwGsNeK2x8EmS1G6c2PjZ9lxtVgm+u7wifpXiJQc88MAHAz4U8MBPDm/fhmQ2OhTvrvor41crfNSZBn5SAS8KbyJKzvoUnx6OzBzvObzpzefupbOvz/4AfuLw9v7KIfNr0ffvY7qi+/b2wp/ATx7+7tJh4v2eeyK4o493fwI/efib8wzf3/FXqgt44IEPBnyosfCDa4cvtaUZsi9P/gR+4vD09UnxyQGZrS5va233BKRvkWWThy9ZfLSd4ZvwIadswAMPfKnE4e3DoPBVPdpcpGh9wW3kXpNe7f++1eXXco8mdz2bHT76E/iJw/8XfsYCXile7e/2VQQ88MAHAz4U8MAX//dN0irD12UTx9dtnFj4pga81oDXGvBaA15nRD9qHjOnF+xXsAAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Welcome' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="931fccc0cf55e717de71c1f7d165454b.png" xmlns="">0xGLLI9Sw7kKdwLB3eOg5RQ</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Back To Loan Center",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "Tbv0yklcr06hYgXKvuzNqw",
+  "Reference": "ZKxc45lPuUOgwjADdcqFvg/Tbv0yklcr06hYgXKvuzNqw",
+  "ParentRef": "ZKxc45lPuUOgwjADdcqFvg/Zz8od6FOJ0COnGyE6fHuUA",
+  "Created": "2024-10-10T14:26:03.1652763Z",
+  "Updated": "2024-10-10T14:26:03.1652763Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Products",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "2Ob_dbXM70mPA_W5Y5D9AQ",
+  "Reference": "ZKxc45lPuUOgwjADdcqFvg/2Ob_dbXM70mPA_W5Y5D9AQ",
+  "ParentRef": "ZKxc45lPuUOgwjADdcqFvg/NIJETPlrFEG0UeE-g7m7Iw",
+  "Created": "2024-10-10T14:19:16.0147108Z",
+  "Updated": "2024-10-10T14:19:16.0147108Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

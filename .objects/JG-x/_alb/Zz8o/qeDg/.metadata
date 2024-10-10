@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Apply For Another Loan",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "qeDgazi_E06gS4Iwx3eXqw",
+  "Reference": "ZKxc45lPuUOgwjADdcqFvg/qeDgazi_E06gS4Iwx3eXqw",
+  "ParentRef": "ZKxc45lPuUOgwjADdcqFvg/Zz8od6FOJ0COnGyE6fHuUA",
+  "Created": "2024-10-10T14:26:03.0903355Z",
+  "Updated": "2024-10-10T14:26:03.0903355Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

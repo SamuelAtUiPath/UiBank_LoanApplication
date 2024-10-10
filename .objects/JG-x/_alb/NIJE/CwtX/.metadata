@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Apply For Account →",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "CwtXR_Dk_kGY88NhLNGd5A",
+  "Reference": "ZKxc45lPuUOgwjADdcqFvg/CwtXR_Dk_kGY88NhLNGd5A",
+  "ParentRef": "ZKxc45lPuUOgwjADdcqFvg/NIJETPlrFEG0UeE-g7m7Iw",
+  "Created": "2024-10-10T14:19:16.6721869Z",
+  "Updated": "2024-10-10T14:19:16.6721869Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

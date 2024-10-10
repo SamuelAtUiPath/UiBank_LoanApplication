@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Current Yearly",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "fTHLHhtoSki3c16371LiNg",
+  "Reference": "ZKxc45lPuUOgwjADdcqFvg/fTHLHhtoSki3c16371LiNg",
+  "ParentRef": "ZKxc45lPuUOgwjADdcqFvg/a_wq4MuTq0i1Gu4AiS6OfQ",
+  "Created": "2024-10-10T14:23:21.274726Z",
+  "Updated": "2024-10-10T14:23:21.274726Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

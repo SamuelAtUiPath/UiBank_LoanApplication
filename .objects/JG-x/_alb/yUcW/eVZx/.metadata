@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Already Have A Loan?",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "eVZxJNMrgEuxM2MEGerv-Q",
+  "Reference": "ZKxc45lPuUOgwjADdcqFvg/eVZxJNMrgEuxM2MEGerv-Q",
+  "ParentRef": "ZKxc45lPuUOgwjADdcqFvg/yUcWuSRrvUOTTBPAjup4PA",
+  "Created": "2024-10-10T14:19:37.7192997Z",
+  "Updated": "2024-10-10T14:19:37.7192997Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

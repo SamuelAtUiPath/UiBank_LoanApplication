@@ -1,0 +1,13 @@
+﻿{
+  "Name": "yearly income",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "2SC5eGaCS0aHDJbtEfXrwQ",
+  "Reference": "ZKxc45lPuUOgwjADdcqFvg/2SC5eGaCS0aHDJbtEfXrwQ",
+  "ParentRef": "ZKxc45lPuUOgwjADdcqFvg/3tKTTFk98UeU7q5waXIlEw",
+  "Created": "2024-10-10T14:33:21.8560068Z",
+  "Updated": "2024-10-10T14:33:21.8560068Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

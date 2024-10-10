@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Home page",
+  "Type": "Screen",
+  "Id": "NIJETPlrFEG0UeE-g7m7Iw",
+  "Reference": "ZKxc45lPuUOgwjADdcqFvg/NIJETPlrFEG0UeE-g7m7Iw",
+  "ParentRef": "ZKxc45lPuUOgwjADdcqFvg/_albw2FU7k6uEky5w-Xn5A",
+  "Created": "2024-10-10T14:19:15.806065Z",
+  "Updated": "2024-10-10T14:19:15.806065Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

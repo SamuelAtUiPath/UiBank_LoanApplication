@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Retrieve Loan Details",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "QKQV0XF8N0yE_iirHdNPqA",
+  "Reference": "ZKxc45lPuUOgwjADdcqFvg/QKQV0XF8N0yE_iirHdNPqA",
+  "ParentRef": "ZKxc45lPuUOgwjADdcqFvg/NgsKyOwA9k6bke3IJGkqgA",
+  "Created": "2024-10-10T14:30:53.854512Z",
+  "Updated": "2024-10-10T14:30:53.854512Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Register For Account",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "w3R3RRYUwUCAAkqQ1aZPzA",
+  "Reference": "ZKxc45lPuUOgwjADdcqFvg/w3R3RRYUwUCAAkqQ1aZPzA",
+  "ParentRef": "ZKxc45lPuUOgwjADdcqFvg/NIJETPlrFEG0UeE-g7m7Iw",
+  "Created": "2024-10-10T14:19:16.4132384Z",
+  "Updated": "2024-10-10T14:19:16.4132384Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

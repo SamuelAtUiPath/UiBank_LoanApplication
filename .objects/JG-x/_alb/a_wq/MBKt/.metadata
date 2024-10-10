@@ -1,0 +1,16 @@
+﻿{
+  "Name": "< Back",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "MBKtOO5-DUWX9m_dWYPd8Q",
+  "Reference": "ZKxc45lPuUOgwjADdcqFvg/MBKtOO5-DUWX9m_dWYPd8Q",
+  "ParentRef": "ZKxc45lPuUOgwjADdcqFvg/a_wq4MuTq0i1Gu4AiS6OfQ",
+  "Created": "2024-10-10T14:22:25.4966275Z",
+  "Updated": "2024-10-10T14:23:20.961345Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
