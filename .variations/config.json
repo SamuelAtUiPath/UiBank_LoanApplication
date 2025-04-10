@@ -1,0 +1,16 @@
+{
+  "dataVariationFileInfo": [
+    {
+      "filePath": ".variations\\Loan_Application_Test_Data_Sheet1.json",
+      "dataVariationType": "File"
+    },
+    {
+      "filePath": ".variations\\UiBank-LoanData.json",
+      "dataVariationType": "TestDataQueue"
+    },
+    {
+      "filePath": ".variations\\UiBankLoanData.json",
+      "dataVariationType": "Entity"
+    }
+  ]
+}

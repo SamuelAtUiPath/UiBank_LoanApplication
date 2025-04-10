@@ -11,7 +11,14 @@
     "UiPath.UIAutomation.Activities": "[24.10.0]"
   },
   "webServices": [],
-  "entitiesStores": [],
+  "entitiesStores": [
+    {
+      "serviceDocument": ".entities/EntitiesStore.json",
+      "tenantName": "Earth",
+      "namespace": "UiBank_Loan_Application",
+      "uniqueReference": "IqPGIA+1MhZ0fQ9iZ2ZIPleRBstV1g7v3Fw/KBM8CSQ="
+    }
+  ],
   "schemaVersion": "4.0",
   "studioVersion": "24.10.1.0",
   "projectVersion": "1.0.5",
@@ -65,6 +72,37 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "UiBank\\UiBank_CheckLoanDetails_ValidID_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7c3b60da-f202-4968-881f-1b57518132fc",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "UiBank\\Mock_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7c67c87e-e404-49a5-9cc5-ffd669b24bf7",
+        "dataVariationFilePath": ".variations\\UiBankLoanData.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "UiBank\\UiBank_ApplyforLoan_DataDriven_DataService_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4e0c4491-048d-4671-96b2-08908641dd29",
+        "dataVariationFilePath": ".variations\\Loan_Application_Test_Data_Sheet1.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "UiBank\\UiBank_ApplyforLoan_DataDriven_CSV_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3a547701-bad7-4bd7-980a-3fdd6299fa57",
+        "dataVariationFilePath": ".variations\\UiBank-LoanData.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "UiBank\\UiBank_ApplyforLoan_DataDriven_TestQueue_TestCase.xaml"
       }
     ],
     "saveToCloud": false
