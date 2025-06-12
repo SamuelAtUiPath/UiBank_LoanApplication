@@ -1,14 +1,16 @@
 {
-  "name": "UiBank Loan Application",
+  "name": "UiBank Loan Application_Tests",
   "projectId": "695d9034-9e6d-4a58-a1df-d3edb5186998",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.23.4]",
     "UiPath.Mail.Activities": "[1.23.1]",
-    "UiPath.System.Activities": "[24.10.3]",
+    "UiPath.System.Activities": "25.4.2",
+    "UiPath.System.Activities.Runtime": "[25.4.2]",
     "UiPath.Testing.Activities": "[24.10.0]",
-    "UiPath.UIAutomation.Activities": "[24.10.0]"
+    "UiPath.UIAutomation.Activities": "25.10.3",
+    "UiPath.UIAutomation.Activities.Runtime": "[25.10.3]"
   },
   "webServices": [],
   "entitiesStores": [
@@ -16,7 +18,7 @@
       "serviceDocument": ".entities/EntitiesStore.json",
       "tenantName": "Earth",
       "namespace": "UiBank_Loan_Application",
-      "uniqueReference": "IqPGIA+1MhZ0fQ9iZ2ZIPleRBstV1g7v3Fw/KBM8CSQ="
+      "uniqueReference": "Xbnja9DCSD8icsrjOftPQ3ImzVk4zKWItzMuopbUlZY="
     }
   ],
   "schemaVersion": "4.0",
@@ -38,11 +40,12 @@
     "readyForPiP": false,
     "startsInPiP": false,
     "mustRestoreAllDependencies": true,
-    "pipType": "ChildSession"
+    "pipType": "ChildSession",
+    "robotVersion": "24.10.0"
   },
   "designOptions": {
     "projectProfile": "Developement",
-    "outputType": "Process",
+    "outputType": "Tests",
     "libraryOptions": {
       "includeOriginalXaml": false,
       "privateWorkflows": []
@@ -54,24 +57,11 @@
     },
     "fileInfoCollection": [
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "5549beb4-668d-446c-95cd-ad4adcdb5454",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "UiBank\\UiBank_ApplyforLoan_Success_TestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "94b0fcb7-6bfb-4d78-871b-8148326efa0b",
-        "testCaseType": "TestCase",
-        "fileName": "UiBank\\UiBank_ApplyforLoan_Denied_TestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "7f81bfed-551b-4d0f-8bb3-792eab96dd12",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "UiBank\\UiBank_CheckLoanDetails_ValidID_TestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
@@ -89,20 +79,54 @@
         "fileName": "UiBank\\UiBank_ApplyforLoan_DataDriven_DataService_TestCase.xaml"
       },
       {
+        "editingStatus": "Publishable",
+        "testCaseId": "3a547701-bad7-4bd7-980a-3fdd6299fa57",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "UiBank\\UiBank_ApplyforLoan_DataDriven_TestQueue_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ae2eb42b-6e55-47e1-9ab7-e4c9dcc05d67",
+        "dataVariationFilePath": ".variations\\ApplyLoan_TestData.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "UiBank\\UiBank_ApplyforLoan_DataDriven_JSON_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "60e60cf6-14df-4474-97ff-47a5d1dd7646",
+        "testCaseType": "TestCase",
+        "fileName": "UiBank\\UiBank_ApplyforLoan_Denied_TestCase.xaml"
+      },
+      {
         "editingStatus": "InProgress",
         "testCaseId": "4e0c4491-048d-4671-96b2-08908641dd29",
         "dataVariationFilePath": ".variations\\Loan_Application_Test_Data_Sheet1.json",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "UiBank\\UiBank_ApplyforLoan_DataDriven_CSV_TestCase.xaml"
+        "fileName": "UiBank\\UiBank_ApplyforLoan_DataDriven_XLSX_TestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "3a547701-bad7-4bd7-980a-3fdd6299fa57",
-        "dataVariationFilePath": ".variations\\UiBank-LoanData.json",
+        "testCaseId": "7f81bfed-551b-4d0f-8bb3-792eab96dd12",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "UiBank\\UiBank_ApplyforLoan_DataDriven_TestQueue_TestCase.xaml"
+        "fileName": "UiBank\\UiBank_CheckLoanDetails_WasValidID_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "dc304bb4-2b97-41d8-b857-c9a4ffeaac2b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "UiBank\\UiBank_CheckLoanDetails_ValidId_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "87a66a3d-aa23-4ef7-bff8-c7a22606cb7a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "UiBank\\UiBank_TestCase.xaml"
       }
     ],
     "saveToCloud": false
@@ -110,20 +134,94 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "73f9bfec-e4b3-405d-91ac-c8bce43a9bc4",
-      "input": [],
+      "filePath": "UiBank\\UiBank_ApplyforLoan_Success_TestCase.xaml",
+      "uniqueId": "5549beb4-668d-446c-95cd-ad4adcdb5454",
+      "input": [
+        {
+          "name": "email",
+          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "LoanAmount",
+          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "LoanTerm",
+          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "YearlyIncome",
+          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "Age",
+          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "test",
+          "type": "UiBank_Loan_Application.test, DataService.UiBank_Loan_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "required": false,
+          "hasDefault": true
+        }
+      ],
       "output": []
     },
     {
-      "filePath": "UiBank\\UiBank_ApplyforLoan.xaml",
-      "uniqueId": "17b1c61c-8fdb-4cb1-8fa4-ef7c024320e6",
-      "input": [],
+      "filePath": "UiBank\\UiBank_ApplyforLoan_DataDriven_TestQueue_TestCase.xaml",
+      "uniqueId": "3a547701-bad7-4bd7-980a-3fdd6299fa57",
+      "input": [
+        {
+          "name": "uiBank_LoanData",
+          "type": "System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "in_email",
+          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "in_LoanAmount",
+          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "in_LoanTerm",
+          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "in_YearlyIncome",
+          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "in_Age",
+          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true
+        }
+      ],
       "output": []
     },
     {
-      "filePath": "UiBank\\UiBank_CheckLoanDetails.xaml",
-      "uniqueId": "1e877c34-64f2-48a8-aa2d-56b6c5363e38",
+      "filePath": "UiBank\\CodedWorkflow_1.cs",
+      "uniqueId": "9c22725c-b5c1-4a32-83eb-cf67035d8e93",
       "input": [],
       "output": []
     }
@@ -132,5 +230,6 @@
   "templateProjectData": {},
   "publishData": {},
   "targetFramework": "Windows",
+  "coverageMergeWorkflowPath": "CoverageMergeHelperWorkflow.xaml",
   "automationHubIdeaUrl": "https://staging.uipath.com/universe/Earth/automationhub_/automation-profile/uibank---loan-processment"
 }

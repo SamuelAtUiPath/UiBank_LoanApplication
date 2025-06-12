@@ -1,20 +1,18 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="UiBank_ApplyforLoan_Success_TestCase" this:UiBank_ApplyforLoan_Success_TestCase.email="email@example.com" this:UiBank_ApplyforLoan_Success_TestCase.LoanAmount="50000" this:UiBank_ApplyforLoan_Success_TestCase.LoanTerm="10" this:UiBank_ApplyforLoan_Success_TestCase.YearlyIncome="9000" this:UiBank_ApplyforLoan_Success_TestCase.Age="35" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:u="clr-namespace:UiBank_Loan_Application;assembly=DataService.UiBank_Loan_Application" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="UiBank_CheckLoanDetails_ValidID_TestCase" this:UiBank_CheckLoanDetails_ValidID_TestCase.LoanId="684ad398f41a7d0049dabef5" this:UiBank_CheckLoanDetails_ValidID_TestCase.RateExpected="6%" this:UiBank_CheckLoanDetails_ValidID_TestCase.AmountExpected="50000" this:UiBank_CheckLoanDetails_ValidID_TestCase.EmailExpected="email@example.com" this:UiBank_CheckLoanDetails_ValidID_TestCase.TermExpected="10" this:UiBank_CheckLoanDetails_ValidID_TestCase.YearlyIncomeExpected="9000" this:UiBank_CheckLoanDetails_ValidID_TestCase.AgeExpected="35" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="email" Type="InArgument(x:String)" />
-    <x:Property Name="LoanAmount" Type="InArgument(x:String)" />
-    <x:Property Name="LoanTerm" Type="InArgument(x:String)" />
-    <x:Property Name="YearlyIncome" Type="InArgument(x:String)" />
-    <x:Property Name="Age" Type="InArgument(x:String)" />
-    <x:Property Name="test" Type="InArgument(u:test)" />
+    <x:Property Name="LoanId" Type="InArgument(x:String)" />
+    <x:Property Name="RateExpected" Type="InArgument(x:String)" />
+    <x:Property Name="AmountExpected" Type="InArgument(x:String)" />
+    <x:Property Name="EmailExpected" Type="InArgument(x:String)" />
+    <x:Property Name="TermExpected" Type="InArgument(x:String)" />
+    <x:Property Name="YearlyIncomeExpected" Type="InArgument(x:String)" />
+    <x:Property Name="AgeExpected" Type="InArgument(x:String)" />
   </x:Members>
-  <this:UiBank_ApplyforLoan_Success_TestCase.test>
-    <InArgument x:TypeArguments="u:test" />
-  </this:UiBank_ApplyforLoan_Success_TestCase.test>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1268.6666666666667,1012</sap:VirtualizedContainerService.HintSize>
-  <sap2010:WorkflowViewState.IdRef>UiBank_ApplyforLoan_Success_TestCase_1</sap2010:WorkflowViewState.IdRef>
+  <sap:VirtualizedContainerService.HintSize>1268.6666666666667,1083.3333333333333</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>UiBank_CheckLoanDetails_ValidID_TestCase_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -46,17 +44,6 @@
       <x:String>System.Linq.Expressions</x:String>
       <x:String>UiPath.Testing.Activities</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
-      <x:String>UiPath.Testing</x:String>
-      <x:String>UiPath.UIAutomationNext.Enums</x:String>
-      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
-      <x:String>UiPath.UIAutomationNext.Activities</x:String>
-      <x:String>UiPath.Platform.ObjectLibrary</x:String>
-      <x:String>UiPath.Platform.SyncObjects</x:String>
-      <x:String>System.ComponentModel</x:String>
-      <x:String>System.Text</x:String>
-      <x:String>System.Text.Json</x:String>
-      <x:String>UiPath.DataService.Definition</x:String>
-      <x:String>UiBank_Loan_Application</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -108,28 +95,14 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
-      <AssemblyReference>System.CodeDom</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
-      <AssemblyReference>UiPath.Testing</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
-      <AssemblyReference>PresentationFramework</AssemblyReference>
-      <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
-      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
-      <AssemblyReference>System.Text.Json</AssemblyReference>
-      <AssemblyReference>UiPath.DataService.Definition</AssemblyReference>
-      <AssemblyReference>DataService.UiBank_Loan_Application</AssemblyReference>
-      <AssemblyReference>UiBank Loan Application_Tests.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="UiBank_ApplyforLoan_Success_TestCase" sap:VirtualizedContainerService.HintSize="1368.6666666666667,779.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="UiBank_CheckLoanDetails_ValidID_TestCase" sap:VirtualizedContainerService.HintSize="671.3333333333333,850.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="LoanId" />
-      <Variable x:TypeArguments="x:String" Name="LoanRate" />
+      <Variable x:TypeArguments="x:String" Name="Email" />
+      <Variable x:TypeArguments="x:String" Name="Amount" />
+      <Variable x:TypeArguments="x:String" Name="Rate" />
+      <Variable x:TypeArguments="x:String" Name="Term" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -144,45 +117,36 @@
       </sap:WorkflowViewStateService.ViewState>
     </Sequence>
     <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="450,260" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="Age" />
+        <Variable x:TypeArguments="x:String" Name="YearlyIncome" />
+      </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="UiBank_ApplyforLoan - Invoke Workflow File (UiBank\UiBank_ApplyforLoan.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="UiBank\UiBank_ApplyforLoan.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="UiBank_CheckLoanDetails - Invoke Workflow File (UiBank\UiBank_CheckLoanDetails.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="UiBank\UiBank_CheckLoanDetails.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="in_email">[email]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_LoanAmount">[LoanAmount]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_LoanTerm">[LoanTerm]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_YearlyIncome">[YearlyIncome]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_Age">[Age]</InArgument>
-          <OutArgument x:TypeArguments="x:String" x:Key="out_LoanId">[LoanId]</OutArgument>
-          <OutArgument x:TypeArguments="x:String" x:Key="out_LoanRate">[LoanRate]</OutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_LoanId">[LoanId]</InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_email">[email]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_amount">[amount]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_rate">[rate]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_term">[term]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_age">[Age]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_yearlyIncome">[YearlyIncome]</OutArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>
-    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="450,374" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="450,445.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Rate: &quot; + LoanRate + Environment.NewLine + &#xA;&quot;Id: &quot; + LoanId]">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:LogMessage>
-      <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression - Has Loan Id" Expression="[Not IsNothing(LoanId)]" sap:VirtualizedContainerService.HintSize="416,114.66666666666667" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </uta:VerifyExpression>
+      <uta:VerifyExpression KeepScreenshots="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="Email" ContinueOnFailure="True" DisplayName="Verify Expression - Email" Expression="[Email = EmailExpected]" sap:VirtualizedContainerService.HintSize="416,124" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" OutputMessageFormat="[&quot;Email - &quot; + Email + &quot; = &quot; + EmailExpected]" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+      <uta:VerifyExpression KeepScreenshots="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="Amount" ContinueOnFailure="True" DisplayName="Verify Expression - Amount" Expression="[Amount = AmountExpected]" sap:VirtualizedContainerService.HintSize="416,124" sap2010:WorkflowViewState.IdRef="VerifyExpression_2" OutputMessageFormat="[&quot;Amount - &quot; + Amount + &quot; = &quot; + AmountExpected]" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+      <uta:VerifyExpression KeepScreenshots="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="Rate" ContinueOnFailure="True" DisplayName="Verify Expression - Rate" Expression="[Rate = RateExpected]" sap:VirtualizedContainerService.HintSize="416,114.66666666666667" sap2010:WorkflowViewState.IdRef="VerifyExpression_3" OutputMessageFormat="[&quot;Rate - &quot; + Rate + &quot; = &quot; + RateExpected]" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
     </Sequence>
   </Sequence>
 </Activity>

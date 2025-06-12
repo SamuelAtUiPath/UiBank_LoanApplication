@@ -5,12 +5,12 @@
       "dataVariationType": "File"
     },
     {
-      "filePath": ".variations\\UiBank-LoanData.json",
-      "dataVariationType": "TestDataQueue"
-    },
-    {
       "filePath": ".variations\\UiBankLoanData.json",
       "dataVariationType": "Entity"
+    },
+    {
+      "filePath": ".variations\\ApplyLoan_TestData.json",
+      "dataVariationType": "File"
     }
   ]
 }

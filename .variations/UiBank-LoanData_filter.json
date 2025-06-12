@@ -1,0 +1,1 @@
+{"TestDataQueueName":"UiBank-LoanData","FolderPath":"Thailand","TestDataQueueId":6383,"TestCaseId":"f3c560ec-d4ca-45c8-b63c-b22a8af06112","Name":"filter","Filters":"{\"SelectedFields\":null,\"Start\":1,\"Limit\":3,\"SortOptions\":null,\"Expansions\":null,\"FilterGroup\":{\"LogicalOperator\":0,\"QueryFilters\":null,\"FilterGroups\":null}}","QueueItemsStatus":"All"}
