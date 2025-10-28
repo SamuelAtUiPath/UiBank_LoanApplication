@@ -1,0 +1,44 @@
+[
+    {
+        "in_OrderNo": "31465594",
+        "Description": "Nothing to change at all. This test will not change any header, line or charges. But will add the attachment and confirm the order",
+        "NumberOfLines": 4,
+        "HasCharges": "false",
+        "HasAttachment":"true"
+    },
+	{
+        "in_OrderNo": "31458416",
+        "Description": "Change delivery date in the lines. No other modification will be done, and order will be confirmed",
+        "NumberOfLines": 1,
+        "HasCharges": "false",
+        "HasAttachment": "false"
+    },
+	{
+        "in_OrderNo": "31466353",
+        "Description": "Change delivery address in the headers. No other modification will be done, and order will be confirmed",
+        "NumberOfLines": 1,
+        "HasCharges": "false",
+        "HasAttachment": "false"
+    },
+	{
+        "in_OrderNo": "3517105",
+        "Description": "Change multiple line items in delivery dates and price",
+        "NumberOfLines": 8,
+        "HasCharges": "false",
+        "HasAttachment": "false"
+    },
+	{
+        "in_OrderNo": "2100068",
+        "Description": "Change multiple line items in supplier article number",
+        "NumberOfLines": 11,
+        "HasCharges": "false",
+        "HasAttachment": "false"
+    },
+    {
+        "in_OrderNo": "3100760",
+        "Description": "Change charges. Change third line description and first line price",
+        "NumberOfLines": 3,
+        "HasCharges": "true",
+        "HasAttachment": "false"
+    }
+]

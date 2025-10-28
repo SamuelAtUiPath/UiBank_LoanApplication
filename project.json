@@ -6,11 +6,12 @@
   "dependencies": {
     "UiPath.Excel.Activities": "[2.23.4]",
     "UiPath.Mail.Activities": "[1.23.1]",
+    "UiPath.MicrosoftOffice365.Activities": "[3.2.10]",
     "UiPath.System.Activities": "25.4.2",
     "UiPath.System.Activities.Runtime": "[25.4.2]",
-    "UiPath.Testing.Activities": "[24.10.0]",
-    "UiPath.UIAutomation.Activities": "25.10.3",
-    "UiPath.UIAutomation.Activities.Runtime": "[25.10.3]"
+    "UiPath.Testing.Activities": "24.10.3",
+    "UiPath.UIAutomation.Activities": "25.10.16",
+    "UiPath.UIAutomation.Activities.Runtime": "[25.10.16]"
   },
   "webServices": [],
   "entitiesStores": [
@@ -57,33 +58,19 @@
     },
     "fileInfoCollection": [
       {
-        "editingStatus": "Publishable",
-        "testCaseId": "5549beb4-668d-446c-95cd-ad4adcdb5454",
+        "editingStatus": "InProgress",
+        "testCaseId": "4e0c4491-048d-4671-96b2-08908641dd29",
+        "dataVariationFilePath": ".variations\\Loan_Application_Test_Data_Sheet1.json",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "UiBank\\UiBank_ApplyforLoan_Success_TestCase.xaml"
+        "fileName": "Tests\\UiBank\\DataDriven\\UiBank_ApplyforLoan_DataDriven_XLSX_TestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "7c3b60da-f202-4968-881f-1b57518132fc",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "UiBank\\Mock_TestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "7c67c87e-e404-49a5-9cc5-ffd669b24bf7",
-        "dataVariationFilePath": ".variations\\UiBankLoanData.json",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "UiBank\\UiBank_ApplyforLoan_DataDriven_DataService_TestCase.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
         "testCaseId": "3a547701-bad7-4bd7-980a-3fdd6299fa57",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "UiBank\\UiBank_ApplyforLoan_DataDriven_TestQueue_TestCase.xaml"
+        "fileName": "Tests\\UiBank\\DataDriven\\UiBank_ApplyforLoan_DataDriven_TestQueue_TestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
@@ -91,141 +78,80 @@
         "dataVariationFilePath": ".variations\\ApplyLoan_TestData.json",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "UiBank\\UiBank_ApplyforLoan_DataDriven_JSON_TestCase.xaml"
+        "fileName": "Tests\\UiBank\\DataDriven\\UiBank_ApplyforLoan_DataDriven_JSON_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7c67c87e-e404-49a5-9cc5-ffd669b24bf7",
+        "dataVariationFilePath": ".variations\\UiBankLoanData.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\UiBank\\DataDriven\\UiBank_ApplyforLoan_DataDriven_DataService_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7c3b60da-f202-4968-881f-1b57518132fc",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\UiBank\\Mock_TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "88668a11-45a1-4d08-82de-ab13e33c9739",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "UiBank\\Autopilot\\Test Login with Special Characters in Username.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "770bc408-142b-4090-a673-78fac9a46d87",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\UiBank\\Login\\UiBank_Login_WrongCredentials_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "156ce977-cd4c-4840-a59d-665161ced98d",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\UiBank\\Login\\UiBank_Login_Success_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5549beb4-668d-446c-95cd-ad4adcdb5454",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\UiBank\\ApplyforLoan\\UiBank_ApplyforLoan_Success_TestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "60e60cf6-14df-4474-97ff-47a5d1dd7646",
         "testCaseType": "TestCase",
-        "fileName": "UiBank\\UiBank_ApplyforLoan_Denied_TestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "4e0c4491-048d-4671-96b2-08908641dd29",
-        "dataVariationFilePath": ".variations\\Loan_Application_Test_Data_Sheet1.json",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "UiBank\\UiBank_ApplyforLoan_DataDriven_XLSX_TestCase.xaml"
+        "fileName": "Tests\\UiBank\\ApplyforLoan\\UiBank_ApplyforLoan_Denied_TestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "7f81bfed-551b-4d0f-8bb3-792eab96dd12",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "UiBank\\UiBank_CheckLoanDetails_WasValidID_TestCase.xaml"
+        "fileName": "Tests\\UiBank\\CheckLoanDetails\\UiBank_CheckLoanDetails_WasValidID_TestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "dc304bb4-2b97-41d8-b857-c9a4ffeaac2b",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "UiBank\\UiBank_CheckLoanDetails_ValidId_TestCase.xaml"
+        "fileName": "Tests\\UiBank\\CheckLoanDetails\\UiBank_CheckLoanDetails_ValidId_TestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "87a66a3d-aa23-4ef7-bff8-c7a22606cb7a",
+        "testCaseId": "240a5b75-e65b-4b9f-9e42-ef4ead9e7c38",
         "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "UiBank\\UiBank_TestCase.xaml"
+        "fileName": "Tests\\UiBank\\CheckLoanDetails\\UiBank_CheckLoanDetails_InvalidID_TestCase.xaml"
       }
     ],
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
-  "entryPoints": [
-    {
-      "filePath": "UiBank\\UiBank_ApplyforLoan_Success_TestCase.xaml",
-      "uniqueId": "5549beb4-668d-446c-95cd-ad4adcdb5454",
-      "input": [
-        {
-          "name": "email",
-          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "LoanAmount",
-          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "LoanTerm",
-          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "YearlyIncome",
-          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "Age",
-          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "test",
-          "type": "UiBank_Loan_Application.test, DataService.UiBank_Loan_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-          "required": false,
-          "hasDefault": true
-        }
-      ],
-      "output": []
-    },
-    {
-      "filePath": "UiBank\\UiBank_ApplyforLoan_DataDriven_TestQueue_TestCase.xaml",
-      "uniqueId": "3a547701-bad7-4bd7-980a-3fdd6299fa57",
-      "input": [
-        {
-          "name": "uiBank_LoanData",
-          "type": "System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "in_email",
-          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "in_LoanAmount",
-          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "in_LoanTerm",
-          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "in_YearlyIncome",
-          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "in_Age",
-          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-          "required": false,
-          "hasDefault": true
-        }
-      ],
-      "output": []
-    },
-    {
-      "filePath": "UiBank\\CodedWorkflow_1.cs",
-      "uniqueId": "9c22725c-b5c1-4a32-83eb-cf67035d8e93",
-      "input": [],
-      "output": []
-    }
-  ],
   "isTemplate": false,
   "templateProjectData": {},
   "publishData": {},

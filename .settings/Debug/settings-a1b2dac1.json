@@ -42,5 +42,10 @@
   "UiPath.UIAutomationNext.Activities.SAPLogon.SAPLogonRetries": "5",
   "UiPath.UIAutomationNext.Activities.SAPLogon.SAPLogonDelayBetweenRetries": "0.5",
   "UiPath.UIAutomationNext.Activities.Logging.TargetSearchLogLevel": "Off",
-  "UiPath.UIAutomationNext.Activities.Logging.TargetSearchPerformanceLogLevel": "Off"
+  "UiPath.UIAutomationNext.Activities.Logging.TargetSearchPerformanceLogLevel": "Off",
+  "UiPath.UIAutomationNext.Activities.UITask.UITaskAgentType": "DOMBasedGPT41",
+  "UiPath.UIAutomationNext.Activities.UITask.UITaskClipboardMode": "Never",
+  "UiPath.UIAutomationNext.Activities.UITask.UITaskMaxIterations": "100",
+  "UiPath.UIAutomationNext.Activities.UITask.UITaskLogLevel": "Info",
+  "UiPath.UIAutomationNext.Activities.UITask.UITaskIsDOMEnabled": "True"
 }
